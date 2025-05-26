@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Online Voting System Registration
+        </title>
+        <style>
+            body{
+                background-color: aqua;
+
+            }
+            form{
+                border: 1px black;
+                margin: 10 px;
+            }
+            input{
+                width: 80%;
+                border: 3px black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Online Voting System</h1>
+        <hr>
+        <h1>Registration</h1>
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name"><br><br>
+            <input type="number" name="mobile" placeholder="Mobile Number"><br><br>
+            <input type="password" name="password" placeholder="Password"><br><br>
+            <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input type="text" name="address" placeholder="Address"><br><br>
+            <center>
+           Upload image : <input type="file" name="photo" ><br><br>
+           Select your role : <select name="role">
+                <option value="1">Voter</option>
+               
+                    <option value="2">Group</option>
+    
+            </select>
+        </center>
+            <button>Register</button><br>
+            Already user ?<a href="../">Login here</a>
+        </form>
+
+    </body>
+</html>
